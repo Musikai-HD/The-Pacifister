@@ -6,13 +6,13 @@ GameItem0_ActionTypes:		;;ActionTimer / ActionTypeID
 GameItem1_ActionTypes:		;;ActionTimer / ActionTypeID
 	.db #$00, #$00, #$00, #$00, #$00, #$00, #$00, #$00
 
-;; Monster: Projectile Source
+;; Monster: Projectile
 GameItem2_ActionTypes:		;;ActionTimer / ActionTypeID
 	.db #$04, #$00, #$00, #$00, #$00, #$00, #$00, #$00
 
-;; Monster: Projectile
+;; Monster: Parryable Projectile
 GameItem3_ActionTypes:		;;ActionTimer / ActionTypeID
-	.db #$00, #$00, #$00, #$00, #$00, #$00, #$00, #$00
+	.db #$04, #$00, #$00, #$00, #$00, #$00, #$00, #$00
 
 ;; Monster: Health Pickup
 GameItem4_ActionTypes:		;;ActionTimer / ActionTypeID
@@ -76,7 +76,7 @@ Object2_ActionTypes:
 
 ;; Monster: boss test eral
 Object3_ActionTypes:
-	.db #$c0, #$15, #$00, #$00, #$00, #$00, #$00, #$00
+	.db #$c0, #$15, #$c0, #$19, #$00, #$00, #$00, #$00
 
 ;; Monster: NULL
 Object4_ActionTypes:

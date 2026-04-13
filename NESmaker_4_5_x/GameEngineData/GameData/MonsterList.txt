@@ -1,10 +1,10 @@
 ;; *************** MonsterList.txt ***************
-;; Monster list export. Monday, April 13, 2026 12:08:28 AM
+;; Monster list export. Monday, April 13, 2026 12:14:28 PM
 
 ;;;; 0	GameItem: Player ID=0
 ;;;; 1	GameItem: Melee ID=1
-;;;; 2	GameItem: Projectile Source ID=2
-;;;; 3	GameItem: Projectile ID=3
+;;;; 2	GameItem: Projectile ID=2
+;;;; 3	GameItem: Parryable Projectile ID=3
 ;;;; 4	GameItem: Health Pickup ID=4
 ;;;; 5	GameItem: Charge Pickup ID=5
 ;;;; 6	GameItem: Key Pickup ID=6

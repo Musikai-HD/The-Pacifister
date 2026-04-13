@@ -211,6 +211,16 @@
 									;; player is self.
 									;; monster is other.
 
+									    ; check if this is GameObject index 3
+										LDA Object_type,x
+										CMP #$03            ; index 3 (0-based)
+										BNE +notSpecialWeapon
+
+										LDA #$01
+										STA parryLegal      ; allow parry
+
+									+notSpecialWeapon:
+
 									LDX otherObject
 									LDA #$00
 									STA Object_status,x

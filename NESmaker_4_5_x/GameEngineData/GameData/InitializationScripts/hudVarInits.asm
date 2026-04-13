@@ -1,5 +1,5 @@
 
-;; UserDefined var init export. Monday, April 13, 2026 12:08:28 AM
+;; UserDefined var init export. Monday, April 13, 2026 12:14:28 PM
 
 LDA #5 ; User Defined Var 0
 STA myLives
@@ -25,3 +25,5 @@ LDA #0 ; User Defined Var 10
 STA spawnDelayTimer
 LDA #0 ; User Defined Var 11
 STA bossesKilled
+LDA #0 ; User Defined Var 12
+STA parryLegal

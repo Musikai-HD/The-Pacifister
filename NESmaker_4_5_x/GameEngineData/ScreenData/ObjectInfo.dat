@@ -23,24 +23,24 @@ GameItem1_0:
 .db #$02, #%00000000
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;; 2 GameItem: Projectile Source
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; Monster = Projectile Source
-;; Size = 1 by1
-;; Animation = DefaultAnimation
-GameItem2_0:
-.db #$1; frame count
-.db #$21, #%00000010
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;; 3 GameItem: Projectile
+;;;; 2 GameItem: Projectile
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Monster = Projectile
 ;; Size = 1 by1
 ;; Animation = DefaultAnimation
+GameItem2_0:
+.db #$1; frame count
+.db #$21, #%00000000
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;; 3 GameItem: Parryable Projectile
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Monster = Parryable Projectile
+;; Size = 1 by1
+;; Animation = DefaultAnimation
 GameItem3_0:
 .db #$1; frame count
-.db #$00, #%00000000
+.db #$21, #%00000010
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;; 4 GameItem: Health Pickup

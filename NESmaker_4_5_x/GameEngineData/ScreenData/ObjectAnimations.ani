@@ -38,25 +38,25 @@ GameItem1_0:
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;; 2 GameItem: Projectile Source
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; Monster = Projectile Source
-;; Size = 1 by1
-;; Animation = DefaultAnimation
-GameItem2_0:
-.db #$21
-.db #%00000010
-
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;; 3 GameItem: Projectile
+;;;; 2 GameItem: Projectile
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Monster = Projectile
 ;; Size = 1 by1
 ;; Animation = DefaultAnimation
-GameItem3_0:
-.db #$00
+GameItem2_0:
+.db #$21
 .db #%00000000
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;; 3 GameItem: Parryable Projectile
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Monster = Parryable Projectile
+;; Size = 1 by1
+;; Animation = DefaultAnimation
+GameItem3_0:
+.db #$21
+.db #%00000010
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

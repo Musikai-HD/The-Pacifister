@@ -6,11 +6,11 @@ GameItem0_EndAction:		;;EndAnimationType / EndActionType
 GameItem1_EndAction:		;;EndAnimationType / EndActionType
 	.db #$00, #$00, #$00, #$00, #$00, #$00, #$00, #$00
 
-;; Monster: Projectile Source
+;; Monster: Projectile
 GameItem2_EndAction:		;;EndAnimationType / EndActionType
 	.db #$00, #$00, #$00, #$00, #$00, #$00, #$00, #$00
 
-;; Monster: Projectile
+;; Monster: Parryable Projectile
 GameItem3_EndAction:		;;EndAnimationType / EndActionType
 	.db #$00, #$00, #$00, #$00, #$00, #$00, #$00, #$00
 
@@ -76,7 +76,7 @@ Object2_EndAction:
 
 ;; Monster: boss test eral
 Object3_EndAction:
-	.db #$01, #$03, #$00, #$00, #$00, #$00, #$00, #$00
+	.db #$01, #$01, #$01, #$03, #$00, #$00, #$00, #$00
 
 ;; Monster: NULL
 Object4_EndAction:

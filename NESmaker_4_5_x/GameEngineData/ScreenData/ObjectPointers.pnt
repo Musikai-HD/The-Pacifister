@@ -51,9 +51,9 @@ GameItem1_Hi:
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;; 2 GameItem: Projectile Source
+;;;; 2 GameItem: Projectile
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; Monster = Projectile Source
+;; Monster = Projectile
 ;; Animations = 1
 GameItem2_Lo:
 ;; AnimationType = Default
@@ -71,9 +71,9 @@ GameItem2_Hi:
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;; 3 GameItem: Projectile
+;;;; 3 GameItem: Parryable Projectile
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; Monster = Projectile
+;; Monster = Parryable Projectile
 ;; Animations = 1
 GameItem3_Lo:
 ;; AnimationType = Default

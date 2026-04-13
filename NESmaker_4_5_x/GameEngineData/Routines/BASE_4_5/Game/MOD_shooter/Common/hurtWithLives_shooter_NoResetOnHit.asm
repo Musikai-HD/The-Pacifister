@@ -7,6 +7,9 @@
 	BEQ +canHurtPlayer
 		JMP +skipHurt
 +canHurtPlayer:
+    LDA parryLegal
+    BEQ +notParrying
+
 	LDA isParrying
     BEQ +notParrying
 
@@ -94,6 +97,7 @@ createParryProjectile:
 
 	STA parryTimer
 	STA parryCooldown
+    STA parryLegal
     
     JMP +skipHurt
 
