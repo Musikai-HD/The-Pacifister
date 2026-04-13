@@ -1,5 +1,5 @@
 ;; *************** DataBank01_Includes.asm ***************
-;; Script data export. Thursday, April 2, 2026 3:00:00 PM
+;; Script data export. Monday, April 13, 2026 12:08:28 AM
 Script00:
 	.include "Routines\BASE_4_5\Game\MOD_shooter\Input\moveDown_shooter.asm"
 Script01:
@@ -14,3 +14,5 @@ Script05:
 	.include "Routines\BASE_4_5\Game\inputScripts\stopMoving.asm"
 Script06:
 	.include "Routines\BASE_4_5\Game\MOD_shooter\Input\parry_timer.asm"
+Script07:
+	.include "Routines\BASE_4_5\Game\inputScripts\startGameWithNewContinuePoints.asm"

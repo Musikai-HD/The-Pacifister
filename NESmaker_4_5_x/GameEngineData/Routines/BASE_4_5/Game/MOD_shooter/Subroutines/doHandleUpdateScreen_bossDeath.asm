@@ -188,6 +188,15 @@ doHandleUpdateScreen:
 				LDA #$00
 				STA bossTile_hold
 				STA bossByte
+
+				;; === INITIALIZE BOSS HEALTH HERE ===
+				LDA bossesKilled
+				ASL A
+				ASL A
+				CLC
+				ADC #$05
+				STA bossHealth
+
 				LDA ScreenFlags00
 				AND #%11100111 
 				STA ScreenFlags00

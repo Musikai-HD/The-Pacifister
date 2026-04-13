@@ -31,6 +31,7 @@ dontSkipCamHandling:
 	BNE doHorizontalCameraUpdate
 		JMP noHorizontalCameraUpdate
 	doHorizontalCameraUpdate:
+		JMP noHorizontalCameraUpdate
 
 	LDA scrollByte
 	AND #%01000000

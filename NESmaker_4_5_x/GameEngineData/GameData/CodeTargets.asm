@@ -1,5 +1,5 @@
 ;; *************** CodeTargets.asm ***************
-;; Code Target data export. Thursday, April 2, 2026 2:59:59 PM
+;; Code Target data export. Monday, April 13, 2026 12:08:27 AM
 ROOT EQU Routines\BASE_4_5\
 SCR_MAIN EQU "Routines\BASE_4_5\System\MainASM.asm"
 SCR_HEADER EQU "Routines\BASE_4_5\System\Header.asm"
@@ -82,7 +82,7 @@ SCR_UPDATE_POSITION EQU "Routines\BASE_4_5\System\ObjectBehaviors\oUpdatePositio
 SCR_INITIALIZE EQU "Routines\BASE_4_5\Game\MOD_shooter\Game\Initialization_shooter.asm"
 SCR_MAIN_LOOP EQU "Routines\BASE_4_5\Game\MainGameLoop.asm"
 SCR_HANDLE_INPUT_SCRIPTS EQU "Routines\BASE_4_5\Game\Subroutines\doHandleInputScripts.asm"
-SCR_EXTRA_SCREEN_LOAD EQU "Routines\BASE_4_5\Game\Subroutines\blank.asm"
+SCR_EXTRA_SCREEN_LOAD EQU "Routines\BASE_4_5\Game\Subroutines\doHideHudAndSpritesOnSpecialScreens.asm"
 SCR_POST_SCREEN_LOAD EQU "Routines\BASE_4_5\Game\Subroutines\blank.asm"
 SCR_PICKUP_SCRIPTS EQU "Routines\BASE_4_5\Game\Subroutines\blank.asm"
 SCR_SPRITE_PREDRAW EQU "Routines\BASE_4_5\Game\Subroutines\doSpritePreDraw.asm"
@@ -144,7 +144,7 @@ SCR_EDGE_7 EQU "Routines\BASE_4_5\Game\Subroutines\blank.asm"
  SCR_AI_REACTION_7 EQU "Routines\BASE_4_5\Game\Subroutines\blank.asm"
 SCR_HANDLE_PHYSICS EQU "Routines\BASE_4_5\Game\MOD_shooter\Subroutines\doHandlePhysics_shooter2.asm"
 SCR_HANDLE_CAMERA EQU "Routines\BASE_4_5\Game\MOD_shooter\Subroutines\doUpdateCamera_shooter2.asm"
-SCR_HANDLE_DRAWING_SPRITES EQU "Routines\BASE_4_5\Game\MOD_shooter\Subroutines\doDrawSprites_ShooterBase_simple.asm"
+SCR_HANDLE_DRAWING_SPRITES EQU "Routines\BASE_4_5\Game\MOD_shooter\Subroutines\doDrawSprites_ShooterBase.asm"
 SCR_HANDLE_OBJECTS EQU "Routines\BASE_4_5\Game\Subroutines\doHandleObjects_withinCamera.asm"
 SCR_HANDLE_OBJECT_UPDATE EQU "Routines\BASE_4_5\Game\Subroutines\doHandleUpdateObjects.asm"
 SCR_HANDLE_TILE_COLLISIONS EQU "Routines\BASE_4_5\Game\MOD_shooter\Subroutines\doHandleTileCollisions_shooter.asm"

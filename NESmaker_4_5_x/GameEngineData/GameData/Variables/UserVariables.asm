@@ -1,7 +1,7 @@
 ;; *************** UserVariables.asm ***************
 
 ;; *************** User Defined Vars ***************
-;; User Defined Vars export. Thursday, April 2, 2026 3:00:00 PM
+;; User Defined Vars export. Monday, April 13, 2026 12:08:28 AM
 
 myLives	.dsb 1
 myAmmo	.dsb 1
@@ -14,3 +14,4 @@ parryCooldown	.dsb 1
 shootTimer	.dsb 1
 spawnTimer	.dsb 1
 spawnDelayTimer	.dsb 1
+bossesKilled	.dsb 1

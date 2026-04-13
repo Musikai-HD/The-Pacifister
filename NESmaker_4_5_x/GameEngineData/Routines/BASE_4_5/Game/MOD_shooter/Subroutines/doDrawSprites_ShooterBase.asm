@@ -259,9 +259,22 @@ doDrawThisSprite:
 						;; tempC becomes the "tile to draw".
 			INY
 			LDA (temp16),y 
-			STA tempD ;; the next value is the attribute to draw.
-			INY 		;; increasing again sets us up for the next sprite.
-						;; now we can use tempA-D to draw our sprite using the macro.
+			STA tempD
+
+			;; ---------------------------------------------------
+			;; PLAYER PARRY PALETTE OVERRIDE (SAFE POINT)
+			;; ---------------------------------------------------
+			TXA
+			BNE +noParry
+
+			LDA isParrying
+			BEQ +noParry
+
+			LDA #%00000010
+			STA tempD
+
+			+noParry:
+			INY
 						
 						
 			;;;;;;;;;;;; Here, we need to evaluate if this tile should be drawn

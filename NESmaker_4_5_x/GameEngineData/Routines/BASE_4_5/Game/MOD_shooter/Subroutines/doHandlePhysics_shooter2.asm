@@ -410,23 +410,16 @@ doHandlePhysics:
 
 skipPhysics:
 
+	JMP +skipCamMovement
+
 	LDA ScreenFlags00
 	AND #%00010000
 	BNE +skipCamMovement
 		LDA Object_vulnerability,x
 		AND #%00000001 ;; set this to "static object"
 		BNE +skipCamMovement
-		LDA xHold_lo
-		CLC
-		ADC #$00
-		STA xHold_lo
-		LDA xHold_hi
-		ADC #$01;; this becomes the "SCROLL SPEED" - it is the offset at which the player moves.
-				;; in conjunction with camera speed update, this could make it scroll faster.
-		STA xHold_hi
-		LDA xHold_screen
-		ADC #$00
-		STA xHold_screen
+		
+		; cam disabled
 
 
 	+skipCamMovement

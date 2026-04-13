@@ -56,19 +56,45 @@
 		;; it WAS a player weapon.
 		DestroyObject
 		DEC bossHealth
-		LDA bossHealth
-		BNE +notPlayerWeapon
-				
-			;; there is no more boss health.
-			;; we need to do two things.
-			;; One, destroy the boss the way we would destroy a lock block.
-			;; Two, make the screen start scrolling again.
-			;;;; STEP ONE: look for boss blocks.
-			;;;; This presumes boss blocks are tile type #$04
-				LDA #$01
-				STA bossByte
-				LDA #$05
-				STA bossHealth ;; reset this for the next boss we run into.
+        LDA bossHealth
+        BNE +notPlayerWeapon
+
+            ;; === BOSS DEFEATED ===
+
+            INC bossesKilled
+
+            LDA bossesKilled
+            ASL A
+            ASL A
+            CLC
+            ADC #$05
+            STA bossHealth
+
+            LDA #$01
+            STA bossByte
+
+            ;; === WARP ===
+            LDA screenUpdateByte
+            ORA #%00000100
+            STA screenUpdateByte
+
+            LDA warpToMap
+            STA warpMap
+            
+            LDA warpToScreen
+            STA currentNametable
+            
+            LDX player1_object
+            STA Object_screen,x
+            
+            LDA #$01
+            STA screenTransitionType
+
+            LDA gameHandler
+            ORA #%10000000
+            STA gameHandler
+
+            JMP +done
 			
 
 +notPlayerWeapon

@@ -1,6 +1,6 @@
 ;; Monster: Player
 GameItem0_ActionTypes:		;;ActionTimer / ActionTypeID
-	.db #$00, #$00, #$00, #$00, #$00, #$00, #$00, #$00
+	.db #$50, #$50, #$00, #$00, #$00, #$00, #$00, #$00
 
 ;; Monster: Melee
 GameItem1_ActionTypes:		;;ActionTimer / ActionTypeID
@@ -72,11 +72,11 @@ Object1_ActionTypes:
 
 ;; Monster: AlienShooter-Copy
 Object2_ActionTypes:
-	.db #$f6, #$17, #$00, #$00, #$00, #$00, #$00, #$00
+	.db #$56, #$17, #$00, #$00, #$00, #$00, #$00, #$00
 
-;; Monster: NULL
+;; Monster: boss test eral
 Object3_ActionTypes:
-	.db #$00, #$00, #$00, #$00, #$00, #$00, #$00, #$00
+	.db #$c0, #$15, #$00, #$00, #$00, #$00, #$00, #$00
 
 ;; Monster: NULL
 Object4_ActionTypes:

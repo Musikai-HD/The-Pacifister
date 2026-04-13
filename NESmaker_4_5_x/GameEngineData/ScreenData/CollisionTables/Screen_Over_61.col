@@ -1,6 +1,5 @@
-;; *************** NULL SCREEN ***************
-;; Collision data export. Thursday, April 2, 2026 2:59:59 PM
-;; GraphicBankID = 0x00
+;; Collision data export. Monday, April 13, 2026 12:08:27 AM
+;; GraphicBankID = 0x01
 ;; PaletteID = 0x00
 
 ;; Collision:
@@ -30,18 +29,18 @@ Screen_Over_61_info:
 ;; Byte 4: MainTileId(4) / ScreenTileID(4) CHANGED ***** ObjectPaletteTriggeredNight1ID
 	.db #$00
 ;; Byte 5: All screen bits (Respawn/DayNight/Paths/Boss/Dark/Underground/Animated/ShowText)
-	.db #$00;; Byte 6: ScreenByte01 (Hud/Paths/DayNight/Dark/000/screenSpeed
-	.db #%10000000
+	.db #$f0;; Byte 6: ScreenByte01 (Hud/Paths/DayNight/Dark/000/screenSpeed
+	.db #%11100000
 ;; Byte 7: Path Tile mask
 	.db #$f0
 ;; Byte 8: What screen does a portal tile on this screen warp to? 
-	.db #$00
+	.db #$10
 ;; Byte 9: Y and X if player comes through a portal 
-	.db #$00
+	.db #$76
 ;; Byte 10: (DayMonsterBank/NightMonsterBank/DayTriggerMonsterBank/NightTriggerMonsterBank/SongIndex(4bits) ) CHANGED ***** ObjectPaletteTriggeredNight2ID
 	.db #$0
 ;; Byte 11: Using this for needed bits. (BIT 0 = warp to underworld if true.)(xyyy0123) x=has 8x8 pixels, yyy = GamesState 0=showTextOnLoad, 1=underground,2=animated,3=warp 
-	.db #$00
+	.db #$90
 ;; Byte 12: Monster 1 Origin Day Normal (yyyyxxxx) if not placed then (111100xx) where x is: 01=random 10=edgespawn 11=disabled
 	.db #$f3
 ;; Byte 13: Monster 2 Origin Day Normal (yyyyxxxx) if not placed then (111100xx) where x is: 01=random 10=edgespawn 11=disabled

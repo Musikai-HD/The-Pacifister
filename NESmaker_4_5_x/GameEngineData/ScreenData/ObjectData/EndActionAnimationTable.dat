@@ -1,6 +1,6 @@
 ;; Monster: Player
 GameItem0_EndAction:		;;EndAnimationType / EndActionType
-	.db #$00, #$00, #$00, #$00, #$00, #$00, #$00, #$00
+	.db #$01, #$03, #$00, #$00, #$00, #$00, #$00, #$00
 
 ;; Monster: Melee
 GameItem1_EndAction:		;;EndAnimationType / EndActionType
@@ -74,9 +74,9 @@ Object1_EndAction:
 Object2_EndAction:
 	.db #$01, #$03, #$00, #$00, #$00, #$00, #$00, #$00
 
-;; Monster: NULL
+;; Monster: boss test eral
 Object3_EndAction:
-	.db #$00, #$00, #$00, #$00, #$00, #$00, #$00, #$00
+	.db #$01, #$03, #$00, #$00, #$00, #$00, #$00, #$00
 
 ;; Monster: NULL
 Object4_EndAction:

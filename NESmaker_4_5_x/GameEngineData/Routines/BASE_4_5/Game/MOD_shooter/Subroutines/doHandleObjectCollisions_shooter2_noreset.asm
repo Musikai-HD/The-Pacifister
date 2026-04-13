@@ -120,11 +120,44 @@
 							;; There was a collision between a monster and a weapon.
 							;; weapon is self.
 							;; monster is other.
-							DestroyObject
+
+								;; decrement boss health
+								LDA bossHealth
+								SEC
+								SBC #$01
+								STA bossHealth
+
+								;; if not zero, exit
+								BNE +doneBossHealthCheck
+
+								;; --------------------------------------
+								;; BOSS DEAD -> WARP PLAYER / NEXT SCREEN
+								;; --------------------------------------
+
+								LDA screenUpdateByte
+								ORA #%00000100
+								STA screenUpdateByte
+
+								LDA warpToMap
+								STA warpMap
+
+								LDA warpToScreen
+								STA currentNametable
+
+								LDX player1_object
+								STA Object_screen,x
+
+								LDA #$01
+								STA screenTransitionType
+
+								LDA gameHandler
+								ORA #%10000000
+								STA gameHandler
+								JMP +done
+
+							+doneBossHealthCheck:
+
 							;ChangeActionStep otherObject, #$07
-							
-							
-								JSR doHandleHurtMonster
 								
 							LDX selfObject
 							DestroyObject

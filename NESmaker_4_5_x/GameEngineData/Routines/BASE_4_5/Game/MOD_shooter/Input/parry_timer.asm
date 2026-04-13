@@ -7,6 +7,7 @@
         ;; start parry
         LDA #$01
         STA isParrying
+        
 
         ;; set active parry time (15 frames)
         LDA #$0F

@@ -1,6 +1,6 @@
 ;; Monster: Player
 GameItem0_animSpeedTable:		;;AnimationGroupOffset / AnimationSpeed
-	.db #$00, #$00, #$00, #$00, #$00, #$00, #$00, #$00
+	.db #$00, #$10, #$00, #$00, #$00, #$00, #$00, #$00
 
 ;; Monster: Melee
 GameItem1_animSpeedTable:		;;AnimationGroupOffset / AnimationSpeed
@@ -74,7 +74,7 @@ Object1_animSpeedTable:
 Object2_animSpeedTable:
 	.db #$00, #$00, #$00, #$00, #$00, #$00, #$00, #$00
 
-;; Monster: NULL
+;; Monster: boss test eral
 Object3_animSpeedTable:
 	.db #$00, #$00, #$00, #$00, #$00, #$00, #$00, #$00
 
