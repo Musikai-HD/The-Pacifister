@@ -25,12 +25,24 @@
 
 +notParrying:
 
-    Dec myLives
+    ; subtract life
     LDA myLives
-	PlaySound #$04, #$02
+    SEC
+    SBC #$01
+    STA myLives
+
+    ; play sound (safe now because we won't rely on flags after it)
+    PlaySound #$04, #$02
+
+    ; re-load and explicitly compare
+    LDA myLives
+    CMP #$00
     BNE +continueGame
 
-        JMP RESET
+    ; GAME OVER
+    JMP RESET
+
+    +continueGame:
 
 +continueGame:
 

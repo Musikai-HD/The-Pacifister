@@ -1,16 +1,20 @@
 ;; *************** HUD_UPDATES.dat ***************
-;; HUD includes export. Wednesday, April 15, 2026 3:18:20 AM
+;; HUD includes export. Wednesday, April 15, 2026 5:08:49 AM
 
 updateHudElement0:
+DrawTilesDirect #HUD_BANK, HUD__0_0_STRING, #1, #27, #HUD_OFFSET
  RTS
 
 updateHudElement1:
+DrawTilesDirect #HUD_BANK, HUD__0_1_STRING, #1, #28, #HUD_OFFSET
  RTS
 
 updateHudElement2:
+DrawVariableTiles #10, #27, #BOX_0_ASSET_2_MAX_VALUE , #BOX_0_ASSET_2_BLANK , myLives, #BOX_0_ASSET_2_IMAGE , #HUD_OFFSET 
  RTS
 
 updateHudElement3:
+DrawNumber #11, #28, bossHealth , #BOX_0_ASSET_3_MAX_VALUE
  RTS
 
 updateHudElement4:

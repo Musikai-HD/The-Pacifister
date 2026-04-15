@@ -1,5 +1,5 @@
 ;; *************** CodeTargets.asm ***************
-;; Code Target data export. Wednesday, April 15, 2026 3:18:20 AM
+;; Code Target data export. Wednesday, April 15, 2026 5:08:49 AM
 ROOT EQU Routines\BASE_4_5\
 SCR_MAIN EQU "Routines\BASE_4_5\System\MainASM.asm"
 SCR_HEADER EQU "Routines\BASE_4_5\System\Header.asm"
@@ -108,8 +108,8 @@ SCR_TILE_14 EQU "Routines\BASE_4_5\Game\Subroutines\blank.asm"
 SCR_TILE_15 EQU "Routines\BASE_4_5\Game\Subroutines\blank.asm"
 SCR_HANDLE_PLAYER_HURT EQU "Routines\BASE_4_5\Game\MOD_shooter\Common\hurtWithLives_shooter_NoResetOnHit.asm"
 SCR_HANDLE_MONSTER_HURT EQU "Routines\BASE_4_5\Game\MOD_shooter\Common\doHandleHurtMonster_Shooter_CountMonsters.asm"
-SCR_HANDLE_HUD EQU "Routines\BASE_4_5\Game\Subroutines\blank.asm"
-SCR_DRAW_SPRITE_HUD EQU "Routines\BASE_4_5\Game\MOD_shooter\Common\doDrawSpriteHud_Shooter.asm"
+SCR_HANDLE_HUD EQU "Routines\BASE_4_5\Game\Subroutines\doHandleHud.asm"
+SCR_DRAW_SPRITE_HUD EQU "Routines\BASE_4_5\Game\Subroutines\blank.asm"
 SCR_AI_0 EQU "Routines\BASE_4_5\Game\Subroutines\blank.asm"
 SCR_AI_1 EQU "Routines\BASE_4_5\Game\AI_Scripts\MoveRandom_8Dir.asm"
 SCR_AI_2 EQU "Routines\BASE_4_5\Game\AI_Scripts\StopMoving.asm"

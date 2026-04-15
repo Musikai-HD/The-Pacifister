@@ -434,7 +434,7 @@ Object4_Hi:
 ;;;; 5 Monster Footer
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Monster = Footer
-;; Animations = 1
+;; Animations = 3
 Object5_Lo:
 ;; AnimationType = Default
 	.db <Object5_0, <Object5_0
@@ -442,12 +442,36 @@ Object5_Lo:
 	.db <Object5_0, <Object5_0
 	.db <Object5_0, <Object5_0
 
+;; AnimationType = Ready
+	.db <Object5_1, <Object5_1
+	.db <Object5_1, <Object5_1
+	.db <Object5_1, <Object5_1
+	.db <Object5_1, <Object5_1
+
+;; AnimationType = Atk
+	.db <Object5_2, <Object5_2
+	.db <Object5_2, <Object5_2
+	.db <Object5_2, <Object5_2
+	.db <Object5_2, <Object5_2
+
 Object5_Hi:
 ;; AnimationType = Default
 	.db >Object5_0, >Object5_0
 	.db >Object5_0, >Object5_0
 	.db >Object5_0, >Object5_0
 	.db >Object5_0, >Object5_0
+
+;; AnimationType = Ready
+	.db >Object5_1, >Object5_1
+	.db >Object5_1, >Object5_1
+	.db >Object5_1, >Object5_1
+	.db >Object5_1, >Object5_1
+
+;; AnimationType = Atk
+	.db >Object5_2, >Object5_2
+	.db >Object5_2, >Object5_2
+	.db >Object5_2, >Object5_2
+	.db >Object5_2, >Object5_2
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

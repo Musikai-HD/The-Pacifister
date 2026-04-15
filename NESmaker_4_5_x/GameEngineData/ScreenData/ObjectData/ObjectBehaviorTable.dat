@@ -84,7 +84,7 @@ Object4_ActionTypes:
 
 ;; Monster: Footer
 Object5_ActionTypes:
-	.db #$80, #$19, #$80, #$15, #$80, #$19, #$c0, #$15
+	.db #$80, #$39, #$60, #$35, #$80, #$39, #$c0, #$35
 
 ;; Monster: Footer Backup
 Object6_ActionTypes:

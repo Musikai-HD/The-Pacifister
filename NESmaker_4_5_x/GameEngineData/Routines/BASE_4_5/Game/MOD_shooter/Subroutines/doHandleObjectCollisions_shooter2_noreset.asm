@@ -131,21 +131,24 @@
 								BNE +doneBossHealthCheck
 
 								; --------------------------
-								; BOSS DEAD LOGIC
+								; BOSS DEAD LOGIC (FIXED)
 								; --------------------------
 
-								; increment bosses killed
+								; increment bosses killed (SAFE)
 								LDA bossesKilled
 								CLC
 								ADC #$01
 								STA bossesKilled
 
-								; calculate next boss health
-								ASL A
-								ASL A
+								; compute 3x safely WITHOUT temp
+								LDA bossesKilled
+								ASL A              ; 2x
 								CLC
-								ADC #$03
+								ADC bossesKilled   ; 3x
+								CLC
+								ADC #$05
 								STA bossHealth
+
 								PlaySound #$01, #$02
 
 								; --------------------------

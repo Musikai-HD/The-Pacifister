@@ -1,3 +1,7 @@
 ;; *************** HUD_INCLUDES.dat ***************
-;; HUD includes export. Wednesday, April 15, 2026 3:18:20 AM
+;; HUD includes export. Wednesday, April 15, 2026 5:08:49 AM
 
+DrawTilesDirect #HUD_BANK, HUD__0_0_STRING, #1, #27, #HUD_OFFSET
+DrawTilesDirect #HUD_BANK, HUD__0_1_STRING, #1, #28, #HUD_OFFSET
+DrawVariableTiles #10, #27, #BOX_0_ASSET_2_MAX_VALUE , #BOX_0_ASSET_2_BLANK , myLives, #BOX_0_ASSET_2_IMAGE , #HUD_OFFSET 
+DrawNumber #11, #28, bossHealth , #BOX_0_ASSET_3_MAX_VALUE
