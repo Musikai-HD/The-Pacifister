@@ -1,6 +1,6 @@
 ;; Monster: Player
 GameItem0_animSpeedTable:		;;AnimationGroupOffset / AnimationSpeed
-	.db #$00, #$10, #$00, #$00, #$00, #$00, #$00, #$00
+	.db #$00, #$13, #$00, #$00, #$00, #$00, #$00, #$00
 
 ;; Monster: Melee
 GameItem1_animSpeedTable:		;;AnimationGroupOffset / AnimationSpeed
@@ -70,23 +70,23 @@ Object0_animSpeedTable:
 Object1_animSpeedTable:
 	.db #$00, #$00, #$00, #$00, #$00, #$00, #$00, #$00
 
-;; Monster: AlienShooter-Copy
+;; Monster: Shooter Backup
 Object2_animSpeedTable:
 	.db #$00, #$00, #$00, #$00, #$00, #$00, #$00, #$00
 
-;; Monster: boss test eral
+;; Monster: Beater
 Object3_animSpeedTable:
 	.db #$00, #$00, #$00, #$00, #$00, #$00, #$00, #$00
 
-;; Monster: NULL
+;; Monster: Shooter
 Object4_animSpeedTable:
 	.db #$00, #$00, #$00, #$00, #$00, #$00, #$00, #$00
 
-;; Monster: NULL
+;; Monster: Footer
 Object5_animSpeedTable:
 	.db #$00, #$00, #$00, #$00, #$00, #$00, #$00, #$00
 
-;; Monster: NULL
+;; Monster: Footer Backup
 Object6_animSpeedTable:
 	.db #$00, #$00, #$00, #$00, #$00, #$00, #$00, #$00
 

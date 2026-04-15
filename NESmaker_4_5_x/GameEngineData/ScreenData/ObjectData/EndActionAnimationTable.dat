@@ -1,6 +1,6 @@
 ;; Monster: Player
 GameItem0_EndAction:		;;EndAnimationType / EndActionType
-	.db #$01, #$03, #$00, #$00, #$00, #$00, #$00, #$00
+	.db #$00, #$00, #$00, #$00, #$00, #$00, #$00, #$00
 
 ;; Monster: Melee
 GameItem1_EndAction:		;;EndAnimationType / EndActionType
@@ -70,25 +70,25 @@ Object0_EndAction:
 Object1_EndAction:
 	.db #$01, #$03, #$00, #$00, #$00, #$00, #$00, #$00
 
-;; Monster: AlienShooter-Copy
+;; Monster: Shooter Backup
 Object2_EndAction:
-	.db #$01, #$03, #$00, #$00, #$00, #$00, #$00, #$00
+	.db #$01, #$01, #$01, #$01, #$03, #$00, #$00, #$00
 
-;; Monster: boss test eral
+;; Monster: Beater
 Object3_EndAction:
 	.db #$01, #$01, #$01, #$03, #$00, #$00, #$00, #$00
 
-;; Monster: NULL
+;; Monster: Shooter
 Object4_EndAction:
-	.db #$00, #$00, #$00, #$00, #$00, #$00, #$00, #$00
+	.db #$01, #$01, #$01, #$01, #$01, #$01, #$01, #$03
 
-;; Monster: NULL
+;; Monster: Footer
 Object5_EndAction:
-	.db #$00, #$00, #$00, #$00, #$00, #$00, #$00, #$00
+	.db #$01, #$01, #$01, #$01, #$01, #$01, #$01, #$03
 
-;; Monster: NULL
+;; Monster: Footer Backup
 Object6_EndAction:
-	.db #$00, #$00, #$00, #$00, #$00, #$00, #$00, #$00
+	.db #$01, #$03, #$00, #$00, #$00, #$00, #$00, #$00
 
 ;; Monster: NULL
 Object7_EndAction:

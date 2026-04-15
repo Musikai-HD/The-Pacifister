@@ -1,5 +1,5 @@
 ;; *************** ZP_RAM.asm ***************
-;; Zero Page export. Monday, April 13, 2026 12:14:28 PM
+;; Zero Page export. Tuesday, April 14, 2026 11:37:19 PM
 
 temp .dsb 1
 temp1 .dsb 1
@@ -99,3 +99,5 @@ screenPrev .dsb 1
 textPosHold .dsb 2
 bossByte .dsb 1
 bossTile_hold .dsb 1
+tempXVel .dsb 1
+tempYVel .dsb 1

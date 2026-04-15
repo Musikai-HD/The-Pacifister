@@ -399,7 +399,7 @@
     <EnableAudio>true</EnableAudio>
     <DisableDynamicSampleRate>false</DisableDynamicSampleRate>
     <AudioLatency>60</AudioLatency>
-    <MasterVolume>3</MasterVolume>
+    <MasterVolume>19</MasterVolume>
     <Square1Volume>100</Square1Volume>
     <Square2Volume>100</Square2Volume>
     <TriangleVolume>100</TriangleVolume>
@@ -425,7 +425,7 @@
     <SampleRate>48000</SampleRate>
     <ReduceSoundInBackground>true</ReduceSoundInBackground>
     <ReduceSoundInFastForward>true</ReduceSoundInFastForward>
-    <VolumeReduction>27</VolumeReduction>
+    <VolumeReduction>0</VolumeReduction>
     <MuteSoundInBackground>true</MuteSoundInBackground>
     <SwapDutyCycles>false</SwapDutyCycles>
     <SilenceTriangleHighFreq>false</SilenceTriangleHighFreq>
@@ -471,7 +471,7 @@
     <OverscanRight>0</OverscanRight>
     <OverscanTop>0</OverscanTop>
     <OverscanBottom>0</OverscanBottom>
-    <VideoScale>3.8125</VideoScale>
+    <VideoScale>3.8</VideoScale>
     <VideoFilter>None</VideoFilter>
     <UseBilinearInterpolation>false</UseBilinearInterpolation>
     <AspectRatio>NoStretching</AspectRatio>
@@ -1913,11 +1913,11 @@
   <GameSpecificSettings />
   <WindowLocation>
     <X>564</X>
-    <Y>27</Y>
+    <Y>28</Y>
   </WindowLocation>
   <WindowSize>
-    <Width>994</Width>
-    <Height>990</Height>
+    <Width>990</Width>
+    <Height>987</Height>
   </WindowSize>
   <CheatWindowLocation>
     <X>651</X>

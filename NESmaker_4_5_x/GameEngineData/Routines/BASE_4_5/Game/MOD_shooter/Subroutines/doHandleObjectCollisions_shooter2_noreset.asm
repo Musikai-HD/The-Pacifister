@@ -1,4 +1,4 @@
-	
+
 	LDA Object_status,x
 	AND #%10000000
 	BNE +doCheckSelfForObjectCollision
@@ -130,9 +130,27 @@
 								;; if not zero, exit
 								BNE +doneBossHealthCheck
 
-								;; --------------------------------------
-								;; BOSS DEAD -> WARP PLAYER / NEXT SCREEN
-								;; --------------------------------------
+								; --------------------------
+								; BOSS DEAD LOGIC
+								; --------------------------
+
+								; increment bosses killed
+								LDA bossesKilled
+								CLC
+								ADC #$01
+								STA bossesKilled
+
+								; calculate next boss health
+								ASL A
+								ASL A
+								CLC
+								ADC #$03
+								STA bossHealth
+								PlaySound #$01, #$02
+
+								; --------------------------
+								; WARP PLAYER
+								; --------------------------
 
 								LDA screenUpdateByte
 								ORA #%00000100
@@ -156,6 +174,8 @@
 								JMP +done
 
 							+doneBossHealthCheck:
+
+							PlaySound #$04, #$02
 
 							;ChangeActionStep otherObject, #$07
 								

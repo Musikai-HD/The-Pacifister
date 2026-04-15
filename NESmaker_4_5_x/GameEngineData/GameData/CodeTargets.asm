@@ -1,5 +1,5 @@
 ;; *************** CodeTargets.asm ***************
-;; Code Target data export. Monday, April 13, 2026 12:14:28 PM
+;; Code Target data export. Tuesday, April 14, 2026 11:37:19 PM
 ROOT EQU Routines\BASE_4_5\
 SCR_MAIN EQU "Routines\BASE_4_5\System\MainASM.asm"
 SCR_HEADER EQU "Routines\BASE_4_5\System\Header.asm"
@@ -120,12 +120,12 @@ SCR_AI_6 EQU "Routines\BASE_4_5\Game\MOD_shooter\AI\TeleportXaxis.asm"
 SCR_AI_7 EQU "Routines\BASE_4_5\Game\MOD_shooter\AI\ShootDown.asm"
 SCR_AI_8 EQU "Routines\BASE_4_5\Game\MOD_shooter\AI\MoveSimple.asm"
 SCR_AI_9 EQU "Routines\BASE_4_5\Game\MOD_shooter\AI\ShootAtPlayerParryable.asm"
-SCR_AI_A EQU "Routines\BASE_4_5\Game\Subroutines\blank.asm"
+SCR_AI_A EQU "Routines\BASE_4_5\Game\AI_Scripts\TeleportYaxis.asm"
 SCR_AI_B EQU "Routines\BASE_4_5\Game\Subroutines\blank.asm"
 SCR_AI_C EQU "Routines\BASE_4_5\Game\Subroutines\blank.asm"
 SCR_AI_D EQU "Routines\BASE_4_5\Game\Subroutines\blank.asm"
 SCR_AI_E EQU "Routines\BASE_4_5\Game\Subroutines\blank.asm"
-SCR_AI_F EQU "Routines\BASE_4_5\Game\Subroutines\blank.asm"
+SCR_AI_F EQU "Routines\BASE_4_5\Game\AI_Scripts\ShootTowardsTopMiddle.asm"
 SCR_EDGE_0 EQU "Routines\BASE_4_5\Game\Subroutines\blank.asm"
 SCR_EDGE_1 EQU "Routines\BASE_4_5\Game\AI_Scripts\AI_reactions\updateScreenAtEdge.asm"
 SCR_EDGE_2 EQU "Routines\BASE_4_5\Game\AI_Scripts\AI_reactions\reverseDirection.asm"

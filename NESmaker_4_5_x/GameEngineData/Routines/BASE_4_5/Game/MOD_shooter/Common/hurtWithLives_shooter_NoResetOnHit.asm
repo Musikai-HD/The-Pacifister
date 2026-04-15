@@ -10,20 +10,24 @@
     LDA parryLegal
     BEQ +notParrying
 
-	LDA isParrying
+    CMP #$01
+    BCC +notParrying
+
+    LDA isParrying
     BEQ +notParrying
 
     LDA Object_status,x
     AND #%10000000
-    BEQ +notParrying        ; NOT parryable → fail parry
+    BEQ +notParrying        ; NOT parryable, fail parry
 
-        JMP +createParryProjectile
+    JMP +createParryProjectile
 
 
 +notParrying:
 
     Dec myLives
     LDA myLives
+	PlaySound #$04, #$02
     BNE +continueGame
 
         JMP RESET
@@ -94,6 +98,8 @@ createParryProjectile:
 
 	LDA #$00
 	STA isParrying
+
+    PlaySound #$00, #$04
 
 	STA parryTimer
 	STA parryCooldown

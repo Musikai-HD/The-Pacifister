@@ -6,28 +6,28 @@
 GameItem0_Lo:
 ;; AnimationType = Default
 	.db <GameItem0_0, <GameItem0_0
+	.db <GameItem0_2, <GameItem0_0
 	.db <GameItem0_0, <GameItem0_0
-	.db <GameItem0_0, <GameItem0_0
-	.db <GameItem0_0, <GameItem0_0
+	.db <GameItem0_1, <GameItem0_0
 
-;; AnimationType = Parrying
-	.db <GameItem0_1, <GameItem0_1
-	.db <GameItem0_1, <GameItem0_1
-	.db <GameItem0_1, <GameItem0_1
-	.db <GameItem0_1, <GameItem0_1
+;; AnimationType = Moving
+	.db <GameItem0_3, <GameItem0_5
+	.db <GameItem0_5, <GameItem0_5
+	.db <GameItem0_3, <GameItem0_4
+	.db <GameItem0_4, <GameItem0_4
 
 GameItem0_Hi:
 ;; AnimationType = Default
 	.db >GameItem0_0, >GameItem0_0
+	.db >GameItem0_2, >GameItem0_0
 	.db >GameItem0_0, >GameItem0_0
-	.db >GameItem0_0, >GameItem0_0
-	.db >GameItem0_0, >GameItem0_0
+	.db >GameItem0_1, >GameItem0_0
 
-;; AnimationType = Parrying
-	.db >GameItem0_1, >GameItem0_1
-	.db >GameItem0_1, >GameItem0_1
-	.db >GameItem0_1, >GameItem0_1
-	.db >GameItem0_1, >GameItem0_1
+;; AnimationType = Moving
+	.db >GameItem0_3, >GameItem0_5
+	.db >GameItem0_5, >GameItem0_5
+	.db >GameItem0_3, >GameItem0_4
+	.db >GameItem0_4, >GameItem0_4
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -371,9 +371,9 @@ Object1_Hi:
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;; 2 Monster AlienShooter-Copy
+;;;; 2 Monster Shooter Backup
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; Monster = AlienShooter-Copy
+;; Monster = Shooter Backup
 ;; Animations = 1
 Object2_Lo:
 ;; AnimationType = Default
@@ -391,9 +391,9 @@ Object2_Hi:
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;; 3 Monster boss test eral
+;;;; 3 Monster Beater
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; Monster = boss test eral
+;; Monster = Beater
 ;; Animations = 1
 Object3_Lo:
 ;; AnimationType = Default
@@ -410,15 +410,66 @@ Object3_Hi:
 	.db >Object3_0, >Object3_0
 
 
-;;;;;;;;; Null Monster ;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;; 4 Monster Shooter
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Monster = Shooter
+;; Animations = 1
 Object4_Lo:
+;; AnimationType = Default
+	.db <Object4_0, <Object4_0
+	.db <Object4_0, <Object4_0
+	.db <Object4_0, <Object4_0
+	.db <Object4_0, <Object4_0
+
 Object4_Hi:
-;;;;;;;;; Null Monster ;;;;;;;;
+;; AnimationType = Default
+	.db >Object4_0, >Object4_0
+	.db >Object4_0, >Object4_0
+	.db >Object4_0, >Object4_0
+	.db >Object4_0, >Object4_0
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;; 5 Monster Footer
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Monster = Footer
+;; Animations = 1
 Object5_Lo:
+;; AnimationType = Default
+	.db <Object5_0, <Object5_0
+	.db <Object5_0, <Object5_0
+	.db <Object5_0, <Object5_0
+	.db <Object5_0, <Object5_0
+
 Object5_Hi:
-;;;;;;;;; Null Monster ;;;;;;;;
+;; AnimationType = Default
+	.db >Object5_0, >Object5_0
+	.db >Object5_0, >Object5_0
+	.db >Object5_0, >Object5_0
+	.db >Object5_0, >Object5_0
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;; 6 Monster Footer Backup
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Monster = Footer Backup
+;; Animations = 1
 Object6_Lo:
+;; AnimationType = Default
+	.db <Object6_0, <Object6_0
+	.db <Object6_0, <Object6_0
+	.db <Object6_0, <Object6_0
+	.db <Object6_0, <Object6_0
+
 Object6_Hi:
+;; AnimationType = Default
+	.db >Object6_0, >Object6_0
+	.db >Object6_0, >Object6_0
+	.db >Object6_0, >Object6_0
+	.db >Object6_0, >Object6_0
+
+
 ;;;;;;;;; Null Monster ;;;;;;;;
 Object7_Lo:
 Object7_Hi:

@@ -1,5 +1,5 @@
 ;; *************** MonsterList.txt ***************
-;; Monster list export. Monday, April 13, 2026 12:14:28 PM
+;; Monster list export. Tuesday, April 14, 2026 11:37:19 PM
 
 ;;;; 0	GameItem: Player ID=0
 ;;;; 1	GameItem: Melee ID=1
@@ -19,5 +19,8 @@
 ;;;; 15	GameItem: Effect 7 ID=15
 ;;;; 0	Monster: Alien ID=0
 ;;;; 1	Monster: AlienShooter ID=1
-;;;; 2	Monster: AlienShooter-Copy ID=2
-;;;; 3	Monster: boss test eral ID=3
+;;;; 2	Monster: Shooter Backup ID=2
+;;;; 3	Monster: Beater ID=3
+;;;; 4	Monster: Shooter ID=4
+;;;; 5	Monster: Footer ID=5
+;;;; 6	Monster: Footer Backup ID=6

@@ -17,6 +17,7 @@
 		
 		LDX tempx
 		
+	PlaySound #$06, #00
 	MoveTowardsPoint tempA, tempC, tempB, tempD
 	LDA Object_direction,x
 	AND #%00000111

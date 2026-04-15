@@ -16,7 +16,7 @@
 		STA tempD
 		
 		LDX tempx
-		
+	
 	MoveTowardsPoint tempA, tempC, tempB, tempD
 	LDA Object_direction,x
 	AND #%00000111

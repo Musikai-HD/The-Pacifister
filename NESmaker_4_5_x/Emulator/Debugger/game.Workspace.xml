@@ -1,21 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <DebugWorkspace xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <Breakpoints>
-    <Breakpoint>
-      <BreakOnRead>false</BreakOnRead>
-      <BreakOnWrite>true</BreakOnWrite>
-      <BreakOnExec>true</BreakOnExec>
-      <Enabled>true</Enabled>
-      <MarkEvent>false</MarkEvent>
-      <ProcessDummyReadWrites>false</ProcessDummyReadWrites>
-      <Address>2047</Address>
-      <StartAddress>0</StartAddress>
-      <EndAddress>0</EndAddress>
-      <AddressType>SingleAddress</AddressType>
-      <Condition />
-      <MemoryType>CpuMemory</MemoryType>
-    </Breakpoint>
-  </Breakpoints>
+  <Breakpoints />
   <WatchValues />
   <Labels>
     <CodeLabel>

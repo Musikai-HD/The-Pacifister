@@ -6,6 +6,11 @@
         DEC bulletTimer
 +skipBullet:
 
+        LDA parryLegal
+    BEQ +skipLegalCheck
+        DEC parryLegal
+    +skipLegalCheck
+
     ;; =========================
     ;; Parry Active Timer
     ;; =========================

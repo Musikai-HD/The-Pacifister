@@ -1,4 +1,7 @@
 ;;; Activate Parry (call when player presses parry button)
+LDA gameHandler
+AND #%10000000   ;; or your transition flag
+BNE +skipAllObjects
 
     ;; if still on cooldown, do nothing
     LDA parryCooldown
@@ -7,6 +10,7 @@
         ;; start parry
         LDA #$01
         STA isParrying
+        PlaySound #$10, #03
         
 
         ;; set active parry time (15 frames)
@@ -18,5 +22,6 @@
         STA parryCooldown
 
 +alreadyActive:
++skipAllObjects:
 
     RTS

@@ -1,7 +1,7 @@
 
-;; UserDefined var init export. Monday, April 13, 2026 12:14:28 PM
+;; UserDefined var init export. Tuesday, April 14, 2026 11:37:19 PM
 
-LDA #5 ; User Defined Var 0
+LDA #50 ; User Defined Var 0
 STA myLives
 LDA #5 ; User Defined Var 1
 STA myAmmo
@@ -9,7 +9,7 @@ LDA #0 ; User Defined Var 2
 STA myKeys
 LDA #0 ; User Defined Var 3
 STA bulletTimer
-LDA #5 ; User Defined Var 4
+LDA #1 ; User Defined Var 4
 STA bossHealth
 LDA #0 ; User Defined Var 5
 STA isParrying
