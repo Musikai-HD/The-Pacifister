@@ -76,11 +76,11 @@ Object2_animSpeedTable:
 
 ;; Monster: Beater
 Object3_animSpeedTable:
-	.db #$00, #$00, #$00, #$00, #$00, #$00, #$00, #$00
+	.db #$0f, #$10, #$0f, #$10, #$00, #$00, #$00, #$00
 
 ;; Monster: Shooter
 Object4_animSpeedTable:
-	.db #$00, #$00, #$00, #$00, #$00, #$00, #$00, #$00
+	.db #$06, #$10, #$06, #$10, #$06, #$10, #$0b, #$10
 
 ;; Monster: Footer
 Object5_animSpeedTable:

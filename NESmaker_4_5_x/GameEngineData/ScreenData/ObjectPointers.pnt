@@ -394,13 +394,19 @@ Object2_Hi:
 ;;;; 3 Monster Beater
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Monster = Beater
-;; Animations = 1
+;; Animations = 2
 Object3_Lo:
 ;; AnimationType = Default
 	.db <Object3_0, <Object3_0
 	.db <Object3_0, <Object3_0
 	.db <Object3_0, <Object3_0
 	.db <Object3_0, <Object3_0
+
+;; AnimationType = atjk
+	.db <Object3_1, <Object3_1
+	.db <Object3_1, <Object3_1
+	.db <Object3_1, <Object3_1
+	.db <Object3_1, <Object3_1
 
 Object3_Hi:
 ;; AnimationType = Default
@@ -409,12 +415,18 @@ Object3_Hi:
 	.db >Object3_0, >Object3_0
 	.db >Object3_0, >Object3_0
 
+;; AnimationType = atjk
+	.db >Object3_1, >Object3_1
+	.db >Object3_1, >Object3_1
+	.db >Object3_1, >Object3_1
+	.db >Object3_1, >Object3_1
+
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;; 4 Monster Shooter
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Monster = Shooter
-;; Animations = 1
+;; Animations = 2
 Object4_Lo:
 ;; AnimationType = Default
 	.db <Object4_0, <Object4_0
@@ -422,12 +434,24 @@ Object4_Lo:
 	.db <Object4_0, <Object4_0
 	.db <Object4_0, <Object4_0
 
+;; AnimationType = atk
+	.db <Object4_1, <Object4_1
+	.db <Object4_1, <Object4_1
+	.db <Object4_1, <Object4_1
+	.db <Object4_1, <Object4_1
+
 Object4_Hi:
 ;; AnimationType = Default
 	.db >Object4_0, >Object4_0
 	.db >Object4_0, >Object4_0
 	.db >Object4_0, >Object4_0
 	.db >Object4_0, >Object4_0
+
+;; AnimationType = atk
+	.db >Object4_1, >Object4_1
+	.db >Object4_1, >Object4_1
+	.db >Object4_1, >Object4_1
+	.db >Object4_1, >Object4_1
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

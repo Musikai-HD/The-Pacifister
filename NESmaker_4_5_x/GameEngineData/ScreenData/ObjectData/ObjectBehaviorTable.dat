@@ -76,11 +76,11 @@ Object2_ActionTypes:
 
 ;; Monster: Beater
 Object3_ActionTypes:
-	.db #$a0, #$15, #$a0, #$19, #$00, #$00, #$00, #$00
+	.db #$80, #$35, #$80, #$39, #$00, #$00, #$00, #$00
 
 ;; Monster: Shooter
 Object4_ActionTypes:
-	.db #$80, #$15, #$80, #$19, #$80, #$15, #$f0, #$19
+	.db #$60, #$35, #$60, #$39, #$60, #$35, #$b0, #$59
 
 ;; Monster: Footer
 Object5_ActionTypes:

@@ -1,4 +1,4 @@
-;; Collision data export. Wednesday, April 15, 2026 5:08:49 AM
+;; Collision data export. Wednesday, April 15, 2026 5:27:09 AM
 ;; GraphicBankID = 0x01
 ;; PaletteID = 0x04
 
@@ -74,7 +74,7 @@ Screen_Over_20_info:
 	.db #$00
 	.db #$00
 ;; Byte 30-32: Monster Palette2:  1,2,3 ==  aaaaaabb bbbbcccc ccdddddd (DayNormal/NightNormal/DayTrig/NightTrig) ***CHANGED*** Pal2 BYTES (Day/Night/DayTr)
-	.db #$01
+	.db #$06
 	.db #$00
 	.db #$00
 ;; Byte 33: MonsterTilesetIDs - Night(4)/Day(4)   (NnnnDddd) big bit is the bank
