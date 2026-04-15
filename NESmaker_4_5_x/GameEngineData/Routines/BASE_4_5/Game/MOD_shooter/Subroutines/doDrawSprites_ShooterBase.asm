@@ -270,7 +270,7 @@ doDrawThisSprite:
 			LDA isParrying
 			BEQ +noParry
 
-			LDA #%00000010
+			LDA #%00000011
 			STA tempD
 
 			+noParry:
