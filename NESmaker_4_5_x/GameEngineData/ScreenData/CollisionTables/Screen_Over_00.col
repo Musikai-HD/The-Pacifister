@@ -1,4 +1,4 @@
-;; Collision data export. Wednesday, April 15, 2026 1:00:32 AM
+;; Collision data export. Wednesday, April 15, 2026 3:18:19 AM
 ;; GraphicBankID = 0x01
 ;; PaletteID = 0x00
 
@@ -8,7 +8,7 @@
 .db #%00000000, #%00000000, #%00000000, #%00000000, #%00000000, #%00000000, #%00000000, #%00000000
 .db #%00000000, #%00000000, #%00000000, #%00000000, #%00000000, #%00000000, #%00000000, #%00000000
 .db #%00010001, #%00010001, #%00010001, #%00010001, #%00010001, #%00010001, #%00010001, #%00010001
-.db #%00010000, #%00000000, #%00000000, #%00000000, #%00000000, #%00000000, #%00000000, #%00000001
+.db #%00010000, #%00010000, #%00000000, #%00000000, #%00000000, #%00000000, #%00000000, #%00010001
 .db #%00010000, #%00000000, #%00000000, #%00000000, #%00000000, #%00000000, #%00000000, #%00000001
 .db #%00010000, #%00000000, #%00000000, #%00000000, #%00000000, #%00000000, #%00000000, #%00000001
 .db #%00010000, #%00000000, #%00000000, #%00000000, #%00000000, #%00000000, #%00000000, #%00000001
@@ -74,11 +74,11 @@ Screen_Over_00_info:
 	.db #$00
 	.db #$00
 ;; Byte 30-32: Monster Palette2:  1,2,3 ==  aaaaaabb bbbbcccc ccdddddd (DayNormal/NightNormal/DayTrig/NightTrig) ***CHANGED*** Pal2 BYTES (Day/Night/DayTr)
-	.db #$01
+	.db #$06
 	.db #$00
 	.db #$00
 ;; Byte 33: MonsterTilesetIDs - Night(4)/Day(4)   (NnnnDddd) big bit is the bank
-	.db #$00
+	.db #$01
 ;; Byte 34: MonsterTilesetIDs - NightTriggered(4)/DayTriggered(4)   (NnnnDddd) big bit is the bank
 	.db #$00
 ;; Byte 35: StringPointer Day 
@@ -100,11 +100,11 @@ Screen_Over_00_info:
 ;; Byte 43: Monster 1 Day ID
 	.db #$13
 ;; Byte 44: Monster 2 Day ID
-	.db #$12
-;; Byte 45: Monster 3 Day ID
-	.db #$11
-;; Byte 46: Monster 4 Day ID
 	.db #$13
+;; Byte 45: Monster 3 Day ID
+	.db #$00
+;; Byte 46: Monster 4 Day ID
+	.db #$00
 ;; Byte 47: Monster 1 Day Triggered ID
 	.db #$00
 ;; Byte 48: Monster 2 Day Triggered ID
@@ -165,7 +165,7 @@ Screen_Over_00_info:
 ;; Byte 77: Tileset Layout (ABCDEFxx) (ABCDEF: 0=Main, Path,HUD / 1=screen
 	.db #$00
 ;; Byte 78: Tileset Layout (xxxxyyyy) (x=bank / y=tileset
-	.db #$10
+	.db #$12
 ;; Byte 79: Tileset Layout (xxxxyyyy) (x=bank / y=tileset
 	.db #$11
 ;; Byte 80: Tileset Layout (xxxxyyyy) (x=bank / y=tileset
@@ -177,7 +177,7 @@ Screen_Over_00_info:
 ;; Byte 83: Tileset Layout (xxxxyyyy) (x=bank / y=tileset
 	.db #$00
 ;; Byte 84-91: GameObj1 D,N,Dt,Nt / GameObj2 D,N,Dt,Nt  ***** changed. now just GameObject1
-	.db #$00
+	.db #$05
 	.db #$00
 	.db #$00
 	.db #$00

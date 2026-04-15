@@ -1,7 +1,6 @@
-;; *************** NULL SCREEN ***************
-;; Collision data export. Wednesday, April 15, 2026 1:00:32 AM
-;; GraphicBankID = 0x00
-;; PaletteID = 0x00
+;; Collision data export. Wednesday, April 15, 2026 3:18:19 AM
+;; GraphicBankID = 0x01
+;; PaletteID = 0x03
 
 ;; Collision:
 .db #%00000000, #%00000000, #%00000000, #%00000000, #%00000000, #%00000000, #%00000000, #%00000000
@@ -26,22 +25,22 @@ Screen_Over_81_info:
 ;; Byte 2: Bank info screen bank(4bits)/graphic bank(2 bits)/00(2bits) CHANGED ***** NightTriggeredMonsterGroupByte
 	.db #$00
 ;; Byte 3: ScreenPaletteId
-	.db #$00
+	.db #$03
 ;; Byte 4: MainTileId(4) / ScreenTileID(4) CHANGED ***** ObjectPaletteTriggeredNight1ID
 	.db #$00
 ;; Byte 5: All screen bits (Respawn/DayNight/Paths/Boss/Dark/Underground/Animated/ShowText)
-	.db #$00;; Byte 6: ScreenByte01 (Hud/Paths/DayNight/Dark/000/screenSpeed
-	.db #%10000000
+	.db #$f0;; Byte 6: ScreenByte01 (Hud/Paths/DayNight/Dark/000/screenSpeed
+	.db #%11100000
 ;; Byte 7: Path Tile mask
 	.db #$f0
 ;; Byte 8: What screen does a portal tile on this screen warp to? 
-	.db #$00
+	.db #$80
 ;; Byte 9: Y and X if player comes through a portal 
 	.db #$00
 ;; Byte 10: (DayMonsterBank/NightMonsterBank/DayTriggerMonsterBank/NightTriggerMonsterBank/SongIndex(4bits) ) CHANGED ***** ObjectPaletteTriggeredNight2ID
 	.db #$0
 ;; Byte 11: Using this for needed bits. (BIT 0 = warp to underworld if true.)(xyyy0123) x=has 8x8 pixels, yyy = GamesState 0=showTextOnLoad, 1=underground,2=animated,3=warp 
-	.db #$00
+	.db #$90
 ;; Byte 12: Monster 1 Origin Day Normal (yyyyxxxx) if not placed then (111100xx) where x is: 01=random 10=edgespawn 11=disabled
 	.db #$f3
 ;; Byte 13: Monster 2 Origin Day Normal (yyyyxxxx) if not placed then (111100xx) where x is: 01=random 10=edgespawn 11=disabled
@@ -131,7 +130,7 @@ Screen_Over_81_info:
 ;; Byte 58: Monster 4 Night Triggered ID
 	.db #$00
 ;; Byte 59: Song Day ID
-	.db #$00
+	.db #$ff
 ;; Byte 60: Song Day Triggered ID
 	.db #$00
 ;; Byte 61: Song Night ID
@@ -164,15 +163,15 @@ Screen_Over_81_info:
 ;; Byte 76: Special Tile Types (abxxxyyy) (x=special type 15 / y = special type 14) 
 	.db #$00
 ;; Byte 77: Tileset Layout (ABCDEFxx) (ABCDEF: 0=Main, Path,HUD / 1=screen
-	.db #$40
+	.db #$0c
 ;; Byte 78: Tileset Layout (xxxxyyyy) (x=bank / y=tileset
-	.db #$10
+	.db #$35
 ;; Byte 79: Tileset Layout (xxxxyyyy) (x=bank / y=tileset
-	.db #$10
+	.db #$24
 ;; Byte 80: Tileset Layout (xxxxyyyy) (x=bank / y=tileset
 	.db #$10
 ;; Byte 81: Tileset Layout (xxxxyyyy) (x=bank / y=tileset
-	.db #$00
+	.db #$11
 ;; Byte 82: Tileset Layout (xxxxyyyy) (x=bank / y=tileset
 	.db #$00
 ;; Byte 83: Tileset Layout (xxxxyyyy) (x=bank / y=tileset

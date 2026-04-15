@@ -1,6 +1,6 @@
-;; Collision data export. Wednesday, April 15, 2026 1:00:32 AM
+;; Collision data export. Wednesday, April 15, 2026 3:18:19 AM
 ;; GraphicBankID = 0x01
-;; PaletteID = 0x01
+;; PaletteID = 0x03
 
 ;; Collision:
 .db #%00000000, #%00000000, #%00000000, #%00000000, #%00000000, #%00000000, #%00000000, #%00000000
@@ -25,7 +25,7 @@ Screen_Over_60_info:
 ;; Byte 2: Bank info screen bank(4bits)/graphic bank(2 bits)/00(2bits) CHANGED ***** NightTriggeredMonsterGroupByte
 	.db #$00
 ;; Byte 3: ScreenPaletteId
-	.db #$01
+	.db #$03
 ;; Byte 4: MainTileId(4) / ScreenTileID(4) CHANGED ***** ObjectPaletteTriggeredNight1ID
 	.db #$00
 ;; Byte 5: All screen bits (Respawn/DayNight/Paths/Boss/Dark/Underground/Animated/ShowText)
@@ -34,7 +34,7 @@ Screen_Over_60_info:
 ;; Byte 7: Path Tile mask
 	.db #$f0
 ;; Byte 8: What screen does a portal tile on this screen warp to? 
-	.db #$00
+	.db #$80
 ;; Byte 9: Y and X if player comes through a portal 
 	.db #$00
 ;; Byte 10: (DayMonsterBank/NightMonsterBank/DayTriggerMonsterBank/NightTriggerMonsterBank/SongIndex(4bits) ) CHANGED ***** ObjectPaletteTriggeredNight2ID
